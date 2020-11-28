@@ -3,5 +3,6 @@ env.php
 /admin/*
 cockpit-master/
 /cockpit-master/*
+cms/
 /cms/*
 fonts

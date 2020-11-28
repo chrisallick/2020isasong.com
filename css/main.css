@@ -34,19 +34,15 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .search-wrapper .play-all-button { float: right; background: url("../img/play.jpg") center center no-repeat; width: 2vw; height: 2vw; background-size: 100% 100%; }
 
 .addasong-wrapper { width: 86%; margin: 0 auto; position: relative; padding: 1.5vw 0vw; }
-.addasong-wrapper .addasongbutton { background: #00228f; width: 100%; padding: 3vw 0px; border-radius: 1.5vw; }
+.addasong-wrapper .addasongbutton { cursor: pointer; background: #00228f; width: 100%; padding: 3vw 0px; border-radius: 1.5vw; }
 .addasong-wrapper .addasongbutton p { color: white; text-align: center; font: normal 2.6vw Arial; }
 .addasong-wrapper form.addsongform { padding-left: 10%; display: none; }
 .addasong-wrapper form.addsongform input { width: 20%; height: 3vw; padding-left: 1vw; box-sizing: border-box; border-radius: .5vw .5vw; border-color: #00228f; outline: none; font: normal 1.2vw Arial; }
-
 .addasong-wrapper form.addsongform input._title { width: 21%; margin-right: 2px; }
-
 .addasong-wrapper form.addsongform .top { margin-bottom: 2vw; }
-
 .addasong-wrapper form.addsongform select { width: 17%; height: 3vw; border-radius: .5vw; padding-left: 1vw; border-width: 2px; border-color: #00228f; outline: none; font: normal 1.2vw Arial; color: rgba(0,0,0,.6); }
-
 .addasong-wrapper form.addsongform textarea { width: 100%; height: 10vw; margin-bottom: 2vw; border-radius: 1vw; padding: 1vw; box-sizing: border-box; resize: none; border-width: 2px; border-color: #00228f; outline: none; font: normal 1.2vw Arial; color: rgba(0,0,0,.6); }
-.addasong-wrapper form.addsongform .submit { margin: 0 auto; background: #00228f; width: 30%; padding: 1vw 0px; border-radius: .5vw .5vw; }
+.addasong-wrapper form.addsongform .submit { cursor: pointer; margin: 0 auto; background: #00228f; width: 30%; padding: 1vw 0px; border-radius: .5vw .5vw; }
 .addasong-wrapper form.addsongform .submit p { color: white; text-align: center; font: normal 1.4vw Arial; }
 .addasong-wrapper form.addsongform .required { border-color: red; }
 .addasong-wrapper .thanks { width: 100%; text-align: center; }
