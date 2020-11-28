@@ -104,23 +104,47 @@ $(document).ready(function() {
     });
 
     $(".addsongform .submit").click(function() {
-        $.post('./admin/addSong.php', {
-            "title" : $(".addsongform ._title").val(),
-            "artist" : $(".addsongform ._artist").val(),
-            "submittedby": $(".addsongform ._submittedby").val(),
-            "location" : $(".addsongform ._location").val(),
-            "fileunder": $(".addsongform ._fileunder").val(),
-            "description" : $(".addsongform ._description").val(),
-        }, function(res) {
-            $(".addsongform").css("opacity","0");
-            $(".thanks").show();
-            $(".thanks").delay(2000).animate({
-                opacity: 0
-            }, 300, function(){
-                $(".thanks").hide().css("opacity","1");
-                $(".addsongform").hide().css("opacity","1");
-                $(".addasongbutton").show();
-            });
+        $(".required").removeClass("required");
+
+        var all_clear = true;
+        
+        $(".addsongform input").each(function(value,input){
+            if( !$(this).val() ) {
+                all_clear = false;
+                $(this).addClass("required");
+            }
         });
+
+        if( $(".addsongform textarea").val() == "" ) {
+            all_clear = false;
+            $(".addsongform textarea").addClass("required");
+
+        }
+
+        if( $(".addsongform ._fileunder").val() == "all" ) {
+            all_clear = false;
+            $(".addsongform ._fileunder").addClass("required");
+        }
+
+        if( all_clear ) {
+            $.post('./admin/addSong.php', {
+                "title" : $(".addsongform ._title").val(),
+                "artist" : $(".addsongform ._artist").val(),
+                "submittedby": $(".addsongform ._submittedby").val(),
+                "location" : $(".addsongform ._location").val(),
+                "fileunder": $(".addsongform ._fileunder").val(),
+                "description" : $(".addsongform ._description").val(),
+            }, function(res) {
+                $(".addsongform").css("opacity","0");
+                $(".thanks").show();
+                $(".thanks").delay(2000).animate({
+                    opacity: 0
+                }, 300, function(){
+                    $(".thanks").hide().css("opacity","1");
+                    $(".addsongform").hide().css("opacity","1");
+                    $(".addasongbutton").show();
+                });
+            });
+        }
     });
 });
