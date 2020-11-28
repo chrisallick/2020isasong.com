@@ -5,52 +5,60 @@ $(window).load(function() {
 });
 
 function buildFiledUnder() {
-    $.get(base_url + "/api/collections/get/filedunder", function(data) {
-        for(var i = 0; i < data.entries.length; i++ ) {            
-            var el = $("<option />");
-            $(el).val(data.entries[i].value);
-            $(el).text(data.entries[i].name);
+    $.ajax({
+        url: base_url + "/api/collections/get/filedunder",
+        type: 'GET',
+        cache: false,
+        success: function(data) {
+            for(var i = 0; i < data.entries.length; i++ ) {            
+                var el = $("<option />");
+                $(el).val(data.entries[i].value);
+                $(el).text(data.entries[i].name);
 
-            $(".searchform select").append(el);
-            $(".addsongform select").append(el.clone());
+                $(".searchform select").append(el);
+                $(".addsongform select").append(el.clone());
+            }
         }
     });
 }
 
 function addSong( _song ) {
-    var el = $("#song-template").clone();
-    $(el).addClass("song").removeAttr("id");
+    if( _song.approved ) {
+        var el = $("#song-template").clone();
+        $(el).addClass("song").removeAttr("id");
 
-    $(el).data("category", _song.fileunder );
+        $(el).data("category", _song.fileunder );
 
-    if( !_song.approved ) {
-        $(el).addClass("pending");
+        $(".song-title p", el).text(_song.title);
+        $(".song-band p", el).text(_song.artist);
+        $(".song-user-name p", el).text(_song.submittedby);
+        $(".song-user-location p", el).text(_song.location);
+        $(".song-user-description", el).text(_song.description);
+        $(".song-file-under p", el).text(_song.fileunder);
+
+        $(".expand", el).click(function() {
+            if( $(this).hasClass("open") ) {
+                $(this).removeClass("open");
+                $(this).parents(".song").removeClass("open")
+            } else {
+                $(this).parents(".song").addClass("open")
+                $(this).addClass("open");
+            }
+        });
+
+        $(".songs").append( el );
     }
-
-    $(".song-title p", el).text(_song.title);
-    $(".song-band p", el).text(_song.artist);
-    $(".song-user-name p", el).text(_song.submittedby);
-    $(".song-user-location p", el).text(_song.location);
-    $(".song-user-description", el).text(_song.description);
-    $(".song-file-under p", el).text(_song.fileunder);
-
-    $(".expand", el).click(function() {
-        if( $(this).hasClass("open") ) {
-            $(this).removeClass("open");
-            $(this).parents(".song").removeClass("open")
-        } else {
-            $(this).parents(".song").addClass("open")
-            $(this).addClass("open");
-        }
-    });
-
-    $(".songs").append( el );
 }
 
 function buildSongs() {
-    $.get(base_url + "/api/collections/get/songs", function(data) {
-        for( var i = 0; i < data.entries.length; i++ ) {
-            addSong( data.entries[i] );
+    $.ajax({
+        url: base_url + "/api/collections/get/songs",
+        type: 'GET',
+        cache: false,
+        success: function(data) {
+            for( var i = 0; i < data.entries.length; i++ ) {
+                addSong( data.entries[i] );
+            }
         }
     });
 }
