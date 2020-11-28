@@ -63,7 +63,6 @@
                 <div class="expand-all"></div>
                 <form class="searchform">
                     <select>
-                        <!-- <option selected value="all">FILE UNDER <span>&caron;</span></option> -->
                         <option selected value="all">FILE UNDER</option>
                     </select>
                 </form>
@@ -77,8 +76,8 @@
                 <form class="addsongform">
                     <input class="_title" type="text" placeholder="Song title..." />
                     <input class="_artist" type="text" placeholder="Artist..." />
-                    <input class="_submittedby" type="text" placeholder="First name + last initial" />
-                    <input class="_location" type="text" placeholder="City, Country" />
+                    <input class="_submittedby" type="text" placeholder="First name..." />
+                    <input class="_location" type="text" placeholder="City..." />
                     <select class="_fileunder">
                         <option>File under</option>
                     </select>
