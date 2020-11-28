@@ -1,0 +1,6 @@
+.DS_Store
+env.php
+/admin/*
+/cockpit-master/*
+/cms/*
+fonts
