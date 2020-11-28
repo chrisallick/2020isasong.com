@@ -79,7 +79,7 @@
                     <input class="_submittedby" type="text" placeholder="First name..." />
                     <input class="_location" type="text" placeholder="City..." />
                     <select class="_fileunder">
-                        <option>File under:</option>
+                        <option selected value="all">File under:</option>
                     </select>
                     <textarea class="_description" placeholder="Add your associated memory or feeling..."></textarea>
                     <div class="submit"><p>SUBMIT</p></div>

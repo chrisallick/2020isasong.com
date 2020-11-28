@@ -31,7 +31,7 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .addasong-wrapper .addasongbutton { background: #00228f; width: 100%; padding: 6vw 0px; border-radius: 4vw; }
 .addasong-wrapper .addasongbutton p { color: white; text-align: center; font: normal 6vw Arial; }
 .addasong-wrapper form.addsongform { margin: 0 auto; display: none; }
-.addasong-wrapper form.addsongform input { width: 100%; height: 10vw; padding-left: 3vw; box-sizing: border-box; margin-bottom: 3vw; border-radius: 2vw 2vw; border-color: #00228f; outline: none; font: normal 3vw Arial; }
+.addasong-wrapper form.addsongform input { width: 100%; height: 10vw; padding-left: 3vw; box-sizing: border-box; margin-bottom: 3vw; border-radius: 2vw 2vw; border: 2px solid rgba(0, 34, 143, 1.000); outline: none; font: normal 3vw Arial; }
 .addasong-wrapper form.addsongform select { margin-bottom: 3vw; width: 100%; height: 10vw; border-radius: 2vw; padding: 0px 3vw; border-width: 2px; border-color: #00228f; outline: none; font: normal 3vw Arial; color: rgba(0,0,0,.6); }
 .addasong-wrapper form.addsongform textarea { width: 100%; height: 20vw; margin-bottom: 3vw; border-radius: 3vw; padding: 3vw; box-sizing: border-box; resize: none; border-width: 2px; border-color: #00228f; outline: none; font: normal 3vw Arial; color: rgba(0,0,0,.6); }
 .addasong-wrapper form.addsongform .submit { margin: 0 auto; background: #00228f; width: 40%; padding: 4vw 0px; border-radius: 4vw; }
