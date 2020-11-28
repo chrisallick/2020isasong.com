@@ -5,7 +5,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>2020 Is a Song</title>
+        <title>2020 IS A SONG</title>
+        <meta name="description" content="A time capsule of music that got us through 2020, as remembered by you.">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+
+        <meta property="og:title" content="2020 IS A SONG" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://2020isasong.com/" />
+        <meta property="og:description" content="A time capsule of music that got us through 2020, as remembered by you." />
+        <meta property="og:image" content="https://2020isasong.com/img/share_this.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
