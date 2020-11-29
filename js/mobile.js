@@ -6,7 +6,7 @@ $(window).load(function() {
 
 function buildFiledUnder() {
     $.ajax({
-        url: base_url + "/api/collections/get/filedunder",
+        url: base_url + "/api/collections/get/fileunder",
         type: 'GET',
         cache: false,
         success: function(data) {
