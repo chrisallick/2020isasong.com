@@ -20,6 +20,11 @@
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="628" />
 
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="2020 IS A SONG">
+        <meta name="twitter:description" content="A time capsule of music that got us through 2020, as remembered by you.">
+        <meta name="twitter:image" content="https://2020isasong.com/img/share_this.jpg">
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
