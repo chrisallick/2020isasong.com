@@ -46,6 +46,21 @@ function addSong( _song ) {
             }
         });
 
+        if( _song.sourceurl ) {
+            $(".song-player", el).attr("src", _song.sourceurl);
+            
+            $(".playsong", el).click(function() {
+                if( $(this).hasClass("playing") ) {
+                    $(this).removeClass("playing");
+                    $("audio", el)[0].pause();
+                    $("audio", el)[0].currentTime = 0;
+                } else {
+                    $(this).addClass("playing");
+                    $("audio", el)[0].play();
+                }
+            });
+        }
+
         $(".songs").append( el );
     }
 }

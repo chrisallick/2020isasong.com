@@ -46,7 +46,8 @@ ul.songs li.song .expand { display: none; }
 ul.songs li.song.open .expand { display: block; }
 ul.songs li.song:last-child { border-width: 0px 0px 0px 0px; }
 ul.songs li.song .expand .song-file-under { margin-bottom: 3vw; }
-ul.songs li.song .expand .playsong { font: normal 3.2vw Courier; text-decoration: underline; background: url("../img/playsong.jpg") center center no-repeat; background-size: 3vw 3vw; background-position: 0px 3px; padding-left: 4vw; }
+ul.songs li.song .expand .playsong { font: normal 3.2vw Courier; text-decoration: underline; background: url("../img/playsong_justplay.jpg") center center no-repeat; background-size: 3vw 3vw; background-position: 0% 0%; padding-left: 4vw; line-height: 2.9vw; }
+ul.songs li.song .expand .playsong.playing { background: url("../img/pause.jpg") center center no-repeat; background-size: 3vw 3vw; background-position: 0% 0%; padding-left: 4vw; }
 ul.songs li.song .toggle-song-view { width: 12vw; height: 12vw; position: absolute; top: 2vw; right: 0px; background: url("../img/expand.song.jpg") center center no-repeat; background-size: 200% 100%; background-position: 100% 0%; }
 ul.songs li.song .toggle-song-view.open { background-position: 0% 0%; }
 
