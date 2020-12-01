@@ -29,7 +29,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
-        <link href='./css/main.css?v=001' media='all' rel='stylesheet' type='text/css' />
+        <link href='./css/main.css?v=002' media='all' rel='stylesheet' type='text/css' />
         
         <script src='./js/jquery-2.1.1.min.js' type='text/javascript'></script>
         <script src='./js/main.js?v=001' type='text/javascript'></script>
@@ -52,7 +52,7 @@
 
             <div class="subtitle-wrapper clear">
                 <p class="subtitle">A time capsule of music that got us through 2020, as remembered by you.</p>
-                <a href="#">2020ISASONG@GMAIL.COM</a>
+                <a href="mailto:2020ISASONG@GMAIL.COM">2020ISASONG@GMAIL.COM</a>
             </div>
             
             <hr class="one" />
@@ -132,7 +132,7 @@
             <hr class="one" />
 
             <div class="contact">
-                <p>QUESTIONS, COMMENTS, DEDICATIONS: <a>2020ISASONG@GMAIL.COM</a></p> 
+                <p>QUESTIONS, COMMENTS, DEDICATIONS: <a href="mailto:2020ISASONG@GMAIL.COM">2020ISASONG@GMAIL.COM</a></p> 
             </div>
 
             <hr class="one" />
