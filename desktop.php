@@ -36,6 +36,16 @@
         <script>
             var base_url = "<?=$base_url?>";
         </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBSN7WT3JN"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-XBSN7WT3JN');
+        </script>
     </head>
     <body>
         <!--
