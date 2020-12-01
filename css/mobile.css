@@ -23,6 +23,35 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .search-wrapper .expand-all { position: absolute; top: calc(50% - 4vw); left: 0px; background: url("../img/expand.collapse.jpg?v=001") center center no-repeat; width: 8vw; height: 8vw; background-size: 200% 100%; background-position: 100% 0%; }
 .search-wrapper .expand-all.on { background-position: 0% 0%; }
 .search-wrapper .play-all { position: absolute; top: calc(50% - 4vw); right: 0px; background: url("../img/play.jpg?v=001") center center no-repeat; width: 8vw; height: 8vw; background-size: 100% 100%; }
+.search-wrapper.playing .play-all { display: none; }
+
+@-webkit-keyframes move1 {
+    0% { height: 16%; }
+    25% { height: 66%; }
+    75% { height: 50%; }
+    100% { height: 16%; }
+}
+
+@-webkit-keyframes move2 {
+    0% { height: 5%; }
+    25% { height: 41%; }
+    75% { height: 66%; }
+    100% { height: 5%; }
+}
+
+@-webkit-keyframes move3 {
+    0% { height: 25%; }
+    25% { height: 5%; }
+    75% { height: 66%; }
+    100% { height: 25%; }
+}
+
+.search-wrapper .playing-anim { cursor: pointer; height: 8vw; display: none; width: 6vw; float: right; position: relative; }
+.search-wrapper.playing .playing-anim { display: block; position: absolute; top: 10px; right: 5px; }
+.search-wrapper .playing-anim .bar { background-color: #00228f; bottom: 0px; position: absolute; height: 1vw; width: .8vw; }
+.search-wrapper .playing-anim .bar.one {  right: 0vw; -webkit-animation: move1 infinite 1s linear; }
+.search-wrapper .playing-anim .bar.two { right: 1.1vw; -webkit-animation: move2 infinite 1s linear; }
+.search-wrapper .playing-anim .bar.three { right: 2.4vw; -webkit-animation: move3 infinite 1s linear; }
 
 .addasong-wrapper { width: 86%; margin: 0 auto; position: relative; padding: 6vw 0vw; }
 .addasong-wrapper .addasongbutton { background: #00228f; width: 100%; padding: 6vw 0px; border-radius: 4vw; }

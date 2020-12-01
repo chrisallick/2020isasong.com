@@ -72,6 +72,11 @@
                     </select>
                 </form>
                 <div class="play-all"></div>
+                <div class="playing-anim">
+                    <div class="bar one"></div>
+                    <div class="bar two"></div>
+                    <div class="bar three"></div>
+                </div>
             </div>
 
             <hr class="two" />
