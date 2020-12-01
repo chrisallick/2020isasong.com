@@ -116,14 +116,16 @@
                         <div class="bar one"></div>
                         <div class="bar two"></div>
                         <div class="bar three"></div>
-                        <!-- <div class="bar four"></div> -->
                     </div>
-                    <audio class="song-player"></audio>
                 </div>
                 <div class="extra">
                     <p class="song-user-description">Blsah blah lakjsdflkjasldkfjalksdjf asdjf lkasjdf klajsdfkl jasdlkfj alksdjflk asjdflk ajsdlfk jaslkdfj alksdfj</p>
                 </div>
             </li>
+
+            <div class="audio-player-wrapper">
+                <audio class="audio-player"></audio>
+            </div>
 
             <ul class="songs">
                 <!-- populated by CMS -->
