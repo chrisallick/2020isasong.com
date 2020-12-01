@@ -19,7 +19,7 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .search-wrapper { position: relative; width: 86%; height: 2.5vw; margin: 0 auto; padding: 4vw 0vw .6vw 0vw; }
 .search-wrapper .item { float: left; font: normal 1.1vw Courier; color: #00228f; height: 2vw; box-sizing: border-box; }
 .search-wrapper .expand-all { width: 10%; }
-.search-wrapper .expand-all-button { background: url("../img/expand.collapse.jpg?v=001") center center no-repeat; width: 2vw; height: 2vw; background-size: 200% 100%; background-position: 100% 0%; }
+.search-wrapper .expand-all-button { cursor: pointer; background: url("../img/expand.collapse.jpg?v=001") center center no-repeat; width: 2vw; height: 2vw; background-size: 200% 100%; background-position: 100% 0%; }
 .search-wrapper .expand-all.on .expand-all-button { background-position: 0% 0%; }
 .search-wrapper .title { width: 20%; padding-top: .4vw; }
 .search-wrapper .artist { width: 20%; padding-top: .4vw; }
@@ -61,7 +61,7 @@ ul.songs li.song.pending { opacity: .6; }
 ul.songs li.song .item { float: left; font: normal 1.1vw Helvetica; color: #00228f; height: 2vw; box-sizing: border-box; }
 
 ul.songs li.song .expand { width: 10%; }
-ul.songs li.song .expand-button { background: url("../img/expand.song.jpg?v=001") center center no-repeat; width: 2vw; height: 2vw; background-size: 200% 100%; background-position: 100% 0%; }
+ul.songs li.song .expand-button { cursor: pointer; background: url("../img/expand.song.jpg?v=001") center center no-repeat; width: 2vw; height: 2vw; background-size: 200% 100%; background-position: 100% 0%; }
 ul.songs li.song .expand.open .expand-button { background-position: 0% 0%; }
 
 ul.songs li.song .song-title { width: 20%; padding-top: .4vw; }
