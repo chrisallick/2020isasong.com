@@ -41,7 +41,7 @@
         <!--
             Your Mother Fuckin' Boy
 
-            Chr!$ @!!iC|< 8==> http://chrisallick.com
+            Chr!$ @!!iC|< 8==> https://chris.computer
         -->
         <div id="wrapper">
             <div class="title-wrapper">
