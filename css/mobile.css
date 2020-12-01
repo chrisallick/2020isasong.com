@@ -1,8 +1,5 @@
 html, body { width: 100%; height: 100%; }
 
-/* FONT FACE */
-@font-face { font-family: "brownstdlight"; src: url("../fonts/brown.std.light.otf"); }
-
 #wrapper { width: 100%; height: 100%; opacity: 0; }
 
 hr.one { width: 86%; margin: 0 auto; border-top: 1px solid #00228f; }
@@ -23,9 +20,9 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .search-wrapper { position: relative; width: 86%; margin: 0 auto; padding: 6vw 0vw; }
 .search-wrapper form { text-align: center; }
 .search-wrapper form select { outline: none; border: 0; font: normal 3.2vw Courier; color: #00228f; }
-.search-wrapper .expand-all { position: absolute; top: calc(50% - 4vw); left: 0px; background: url("../img/expand.collapse.jpg") center center no-repeat; width: 8vw; height: 8vw; background-size: 200% 100%; background-position: 100% 0%; }
+.search-wrapper .expand-all { position: absolute; top: calc(50% - 4vw); left: 0px; background: url("../img/expand.collapse.jpg?v=001") center center no-repeat; width: 8vw; height: 8vw; background-size: 200% 100%; background-position: 100% 0%; }
 .search-wrapper .expand-all.on { background-position: 0% 0%; }
-.search-wrapper .play-all { position: absolute; top: calc(50% - 4vw); right: 0px; background: url("../img/play.jpg") center center no-repeat; width: 8vw; height: 8vw; background-size: 100% 100%; }
+.search-wrapper .play-all { position: absolute; top: calc(50% - 4vw); right: 0px; background: url("../img/play.jpg?v=001") center center no-repeat; width: 8vw; height: 8vw; background-size: 100% 100%; }
 
 .addasong-wrapper { width: 86%; margin: 0 auto; position: relative; padding: 6vw 0vw; }
 .addasong-wrapper .addasongbutton { background: #00228f; width: 100%; padding: 6vw 0px; border-radius: 4vw; }
@@ -46,16 +43,16 @@ ul.songs li.song .expand { display: none; }
 ul.songs li.song.open .expand { display: block; }
 ul.songs li.song:last-child { border-width: 0px 0px 0px 0px; }
 ul.songs li.song .expand .song-file-under { margin-bottom: 3vw; }
-ul.songs li.song .expand .playsong { font: normal 3.2vw Courier; text-decoration: underline; background: url("../img/playsong_justplay.jpg") center center no-repeat; background-size: 3vw 3vw; background-position: 0% 0%; padding-left: 4vw; line-height: 2.9vw; }
-ul.songs li.song .expand .playsong.playing { background: url("../img/pause.jpg") center center no-repeat; background-size: 3vw 3vw; background-position: 0% 0%; padding-left: 4vw; }
-ul.songs li.song .toggle-song-view { width: 12vw; height: 12vw; position: absolute; top: 2vw; right: 0px; background: url("../img/expand.song.jpg") center center no-repeat; background-size: 200% 100%; background-position: 100% 0%; }
+ul.songs li.song .expand .playsong { font: normal 3.2vw Courier; text-decoration: underline; background: url("../img/playsong_justplay.jpg?v=001") center center no-repeat; background-size: 3vw 3vw; background-position: 0% 0%; padding-left: 4vw; line-height: 2.9vw; }
+ul.songs li.song .expand .playsong.playing { background: url("../img/pause.jpg?v=001") center center no-repeat; background-size: 3vw 3vw; background-position: 0% 0%; padding-left: 4vw; }
+ul.songs li.song .toggle-song-view { width: 12vw; height: 12vw; position: absolute; top: 2vw; right: 0px; background: url("../img/expand.song.jpg?v=001") center center no-repeat; background-size: 200% 100%; background-position: 100% 0%; }
 ul.songs li.song .toggle-song-view.open { background-position: 0% 0%; }
 
 .contact { padding: 5vw 0vw; width: 86%; margin: 0 auto; font: normal 3.2vw Courier; color: #00228f; }
 .contact a { text-decoration: underline; font: normal 3.2vw Courier; color: #00228f; }
 
 .rip { width: 86%; margin: 0 auto; padding: 8vw 0vw; }
-.rip img { display: block; margin: 0px auto 3vw auto; }
+.rip img { display: block; width: 18vw; margin: 0px auto 3vw auto; }
 .rip p { text-align: center; font: normal 4vw courier; color: #00228f; }
 
 #song-template { display: none; }

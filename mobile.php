@@ -29,10 +29,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
-        <link href='./css/mobile.css' media='all' rel='stylesheet' type='text/css' />
+        <link href='./css/mobile.css?v=001' media='all' rel='stylesheet' type='text/css' />
         
         <script src='./js/jquery-2.1.1.min.js' type='text/javascript'></script>
-        <script src='./js/mobile.js' type='text/javascript'></script>
+        <script src='./js/mobile.js?v=001' type='text/javascript'></script>
         <script>
             var base_url = "<?=$base_url?>";
         </script>
@@ -125,7 +125,7 @@
             <hr class="one" />
 
             <div class="rip">
-                <img src="./img/rip.png" />
+                <img src="./img/flower.svg?v=001" />
                 <p>IN LOVING MEMORY</p>
             </div>
         </div>
