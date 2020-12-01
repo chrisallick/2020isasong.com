@@ -32,7 +32,7 @@
         <link href='./css/mobile.css?v=002' media='all' rel='stylesheet' type='text/css' />
         
         <script src='./js/jquery-2.1.1.min.js' type='text/javascript'></script>
-        <script src='./js/mobile.js?v=001' type='text/javascript'></script>
+        <script src='./js/mobile.js?v=002' type='text/javascript'></script>
         <script>
             var base_url = "<?=$base_url?>";
         </script>
@@ -58,8 +58,8 @@
             <hr class="one" />
             
             <div class="about">
-                <p>Music has always been a way to feel, heal, and process. In 2020, it helped us to stay connected to our humanity.</p>
-                <p>What one song got you through this crazy heavy year? Add yours with a memory to this audio time capsule, closing December 31.</p>
+                <p>Music has always been a way to feel, heal, and process.<br />In 2020, it helped us to stay connected to our humanity.</p>
+                <p>What one song got you through this crazy heavy year?<br />Add yours with a memory to this audio time capsule, closing December 31.</p>
             </div>
             
             <hr class="one" />
