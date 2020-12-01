@@ -28,7 +28,14 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .search-wrapper .searchform { padding-top: .4vw; }
 .search-wrapper .searchform select { outline: none; border: 0; font: normal 1.1vw Courier; color: #00228f; }
 .search-wrapper .play-all { width: 4%; float: right; }
-.search-wrapper .play-all-button { float: right; background: url("../img/play.jpg?v=001") center center no-repeat; width: 2vw; height: 2vw; background-size: 100% 100%; }
+.search-wrapper.playing .play-all { display: none; }
+.search-wrapper .play-all-button { cursor: pointer; float: right; background: url("../img/play.jpg?v=001") center center no-repeat; width: 2vw; height: 2vw; background-size: 100% 100%; }
+
+.search-wrapper .playing-anim { cursor: pointer; height: 1.6vw; display: none; width: 6vw; float: right; position: relative; }
+.search-wrapper.playing .playing-anim { display: block; }
+.search-wrapper .playing-anim .bar.one { background-color: rgba(0, 34, 143, 1.000); position: absolute; right: 0vw; bottom: 0px; height: 1vw; width: .25vw; -webkit-animation: move1 infinite 1s linear; }
+.search-wrapper .playing-anim .bar.two { background-color: rgba(0, 34, 143, 1.000); position: absolute; right: .65vw; bottom: 0px; height: 1vw; width: .25vw; -webkit-animation: move2 infinite 1s linear; }
+.search-wrapper .playing-anim .bar.three { background-color: rgba(0, 34, 143, 1.000); position: absolute; right: 1.3vw; bottom: 0px; height: 1vw; width: .25vw; -webkit-animation: move3 infinite 1s linear; }
 
 .addasong-wrapper { width: 86%; margin: 0 auto; position: relative; padding: 1.5vw 0vw; }
 .addasong-wrapper .addasongbutton { cursor: pointer; background: #00228f; width: 100%; padding: 3vw 0px; border-radius: 1.5vw; }

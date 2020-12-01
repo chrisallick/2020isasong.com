@@ -1,3 +1,9 @@
+/*
+    todo
+
+    - if playlist mode is activated play next after end
+*/
+
 $(window).load(function() {
     $("#wrapper").animate({
         opacity: 1
@@ -50,6 +56,8 @@ function addSong( _song ) {
             $(el).data("url", _song.sourceurl );
 
             $(".play", el).click(function() {
+                playListMode = false;
+
                 $(".audio-player")[0].pause();
                 $(".song.playing").removeClass("playing");
 
@@ -61,11 +69,12 @@ function addSong( _song ) {
             });
 
             $(".playing-anim", el).click(function() {
+                playListMode = false;
+
                 $(this).parents(".song").removeClass("playing");
 
                 $(".audio-player")[0].pause();
                 $(".audio-player")[0].currentTime = 0;
-
             });
         }
 
@@ -86,6 +95,13 @@ function buildSongs() {
     });
 }
 
+function test() {
+    console.log( $(".audio-player")[0].currentTime );
+    console.log( $(".audio-player")[0].duration );
+    $(".audio-player")[0].currentTime = $(".audio-player")[0].duration - 3;
+}
+
+var playListMode = false;
 $(document).ready(function() {
     buildFiledUnder();
     buildSongs();
@@ -170,4 +186,53 @@ $(document).ready(function() {
             });
         }
     });
+
+    $(".play-all-button").click(function() {
+        playListMode = true;
+
+        $(".search-wrapper").addClass("playing");
+
+        $(".songs .song").first().removeClass("playing");
+
+        $(".audio-player")[0].pause();
+        $(".audio-player")[0].currentTime = 0;
+
+        $(".songs .song").first().addClass("playing");
+
+        $(".audio-player").attr("src", $(".songs .song").first().data("url") );
+        $(".audio-player")[0].currentTime = 0;
+        $(".audio-player")[0].play();
+    });
+
+    $(".search-wrapper .playing-anim").click(function(){
+        playListMode = false;
+        $(".search-wrapper").removeClass("playing");
+
+        $(".audio-player")[0].pause();
+        $(".song.playing").removeClass("playing");
+    });
+
+    $(".audio-player")[0].addEventListener('ended', function() {
+        console.log("ended");
+
+        $(".audio-player")[0].pause();
+        var _el = $(".song.playing")[0];
+        $(".song.playing").removeClass("playing");
+
+        if( playListMode ) {
+            if( $(_el).next().length ) {
+                $(_el).next().addClass("playing");
+
+                $(".audio-player").attr("src", $(_el).next().data("url") );
+                $(".audio-player")[0].currentTime = 0;
+                $(".audio-player")[0].play();
+            } else {
+                playListMode = false;
+                $(".search-wrapper").removeClass("playing");
+            }
+        }
+        
+    },false);
 });
+
+

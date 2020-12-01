@@ -76,6 +76,11 @@
                     </select>
                 </form>
                 <div class="play-all item"><div class="play-all-button"></div></div>
+                <div class="item playing-anim">
+                    <div class="bar one"></div>
+                    <div class="bar two"></div>
+                    <div class="bar three"></div>
+                </div>
             </div>
 
             <hr class="two" />
