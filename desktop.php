@@ -29,10 +29,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
-        <link href='./css/main.css?v=002' media='all' rel='stylesheet' type='text/css' />
+        <link href='./css/main.css?v=003' media='all' rel='stylesheet' type='text/css' />
         
         <script src='./js/jquery-2.1.1.min.js' type='text/javascript'></script>
-        <script src='./js/main.js?v=002' type='text/javascript'></script>
+        <script src='./js/main.js?v=003' type='text/javascript'></script>
         <script>
             var base_url = "<?=$base_url?>";
         </script>
