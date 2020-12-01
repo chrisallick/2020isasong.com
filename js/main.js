@@ -46,6 +46,32 @@ function addSong( _song ) {
             }
         });
 
+        if( _song.sourceurl ) {
+            $(".song-player", el).attr("src", _song.sourceurl);
+
+            $(".play", el).click(function(){
+                if( $(this).parents(".song").hasClass("playing") ) {
+                    $(this).parents(".song").removeClass("playing");
+                    $(".song-player", el)[0].pause();
+                    $(".song-player", el)[0].currentTime = 0;
+                } else {
+                    $(this).parents(".song").addClass("playing");
+                    $(".song-player", el)[0].play();
+                }
+            });
+
+            $(".playing-anim", el).click(function(){
+                if( $(this).parents(".song").hasClass("playing") ) {
+                    $(this).parents(".song").removeClass("playing");
+                    $(".song-player", el)[0].pause();
+                    $(".song-player", el)[0].currentTime = 0;
+                } else {
+                    $(this).parents(".song").addClass("playing");
+                    $(".song-player", el)[0].play();
+                }
+            });
+        }
+
         $(".songs").append( el );
     }
 }

@@ -63,8 +63,37 @@ ul.songs li.song .song-user-name { width: 15%; padding-top: .4vw; }
 ul.songs li.song .song-user-location { width: 15%; padding-top: .4vw; }
 ul.songs li.song .song-file-under { width: 10%; padding-top: .4vw; }
 
-ul.songs li.song .play { width: 5%; float: right; padding-top: .4vw; }
-ul.songs li.song .play .play-button { float: right; background: url("../img/playsong.jpg") center center no-repeat; width: 1.1vw; height: 1vw; background-size: 100% 100%; background-position: 0px 0px; }
+ul.songs li.song .play { cursor: pointer; width: 5%; float: right; padding-top: .4vw; }
+ul.songs li.song.playing .play { display: none; }
+ul.songs li.song .play .play-button { float: right; background: url("../img/playsong.jpg") center center no-repeat; width: 1vw; height: 1vw; background-size: 200% 100%; background-position: 0% 0%; }
+ul.songs li.song.playing .play .play-button { background-position: 100% 0%; }
+
+@-webkit-keyframes move1 {
+    0% { height: 16%; }
+    25% { height: 66%; }
+    75% { height: 50%; }
+    100% { height: 16%; }
+}
+
+@-webkit-keyframes move2 {
+    0% { height: 5%; }
+    25% { height: 41%; }
+    75% { height: 66%; }
+    100% { height: 5%; }
+}
+
+@-webkit-keyframes move3 {
+    0% { height: 25%; }
+    25% { height: 5%; }
+    75% { height: 66%; }
+    100% { height: 25%; }
+}
+
+ul.songs li.song .playing-anim { cursor: pointer; height: 1.6vw; display: none; width: 6vw; float: right; position: relative; }
+ul.songs li.song.playing .playing-anim { display: block; }
+ul.songs li.song .playing-anim .bar.one { background-color: rgba(0, 34, 143, 1.000); position: absolute; right: 0vw; bottom: 0px; height: 1vw; width: .25vw; -webkit-animation: move1 infinite 1s linear; }
+ul.songs li.song .playing-anim .bar.two { background-color: rgba(0, 34, 143, 1.000); position: absolute; right: .65vw; bottom: 0px; height: 1vw; width: .25vw; -webkit-animation: move2 infinite 1s linear; }
+ul.songs li.song .playing-anim .bar.three { background-color: rgba(0, 34, 143, 1.000); position: absolute; right: 1.3vw; bottom: 0px; height: 1vw; width: .25vw; -webkit-animation: move3 infinite 1s linear; }
 
 ul.songs li.song:last-child { border-width: 0px 0px 0px 0px; }
 

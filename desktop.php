@@ -112,6 +112,13 @@
                     <div class="item song-user-location"><p>Los Angeles, CA</p></div>
                     <div class="item song-file-under"><p>Escapism</p></div>
                     <div class="item play"><div class="play-button"></div></div>
+                    <div class="item playing-anim">
+                        <div class="bar one"></div>
+                        <div class="bar two"></div>
+                        <div class="bar three"></div>
+                        <!-- <div class="bar four"></div> -->
+                    </div>
+                    <audio class="song-player"></audio>
                 </div>
                 <div class="extra">
                     <p class="song-user-description">Blsah blah lakjsdflkjasldkfjalksdjf asdjf lkasjdf klajsdfkl jasdlkfj alksdjflk asjdflk ajsdlfk jaslkdfj alksdfj</p>
