@@ -29,7 +29,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
-        <link href='./css/main.css?v=004' media='all' rel='stylesheet' type='text/css' />
+        <link href='./css/main.css?v=005' media='all' rel='stylesheet' type='text/css' />
         
         <script src='./js/jquery-2.1.1.min.js' type='text/javascript'></script>
         <script src='./js/main.js?v=003' type='text/javascript'></script>
