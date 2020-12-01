@@ -47,16 +47,26 @@ function addSong( _song ) {
         });
 
         if( _song.sourceurl ) {
-            $(".song-player", el).attr("src", _song.sourceurl);
+            $(el).data("url", _song.sourceurl );
             
             $(".playsong", el).click(function() {
                 if( $(this).hasClass("playing") ) {
-                    $(this).removeClass("playing");
-                    $("audio", el)[0].pause();
-                    $("audio", el)[0].currentTime = 0;
+                    $(".playsong.playing").text("PLAY");
+                    $(".playsong.playing").removeClass("playing");
+                    
+                    $(".audio-player")[0].pause();
+                    $(".audio-player")[0].currentTime = 0;
                 } else {
+                    $(".audio-player")[0].pause();
+                    $(".playsong.playing").removeClass("playing");
+                    $(".playsong.playing").text("play");
+
                     $(this).addClass("playing");
-                    $("audio", el)[0].play();
+                    $(this).text("PAUSE");
+
+                    $(".audio-player").attr("src", $(el).data("url") );
+                    $(".audio-player")[0].currentTime = 0;
+                    $(".audio-player")[0].play();
                 }
             });
         }

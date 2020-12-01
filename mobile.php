@@ -106,10 +106,13 @@
                     <p class="song-user-description">Blsah blah lakjsdflkjasldkfjalksdjf asdjf lkasjdf klajsdfkl jasdlkfj alksdjflk asjdflk ajsdlfk jaslkdfj alksdfj</p>
                     <p class="song-file-under">Escapism</p>
                     <p class="playsong">PLAY</p>
-                    <audio class="song-player"></audio>
                 </div>
                 <div class="toggle-song-view"></div>
             </li>
+
+            <div class="audio-player-wrapper">
+                <audio class="audio-player"></audio>
+            </div>
 
             <ul class="songs">
                 <!-- populated by CMS -->
