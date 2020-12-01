@@ -29,7 +29,7 @@ function buildFiledUnder() {
 }
 
 function addSong( _song ) {
-    //if( _song.approved ) {
+    if( _song.approved ) {
         var el = $("#song-template").clone();
         $(el).addClass("song").removeAttr("id");
 
@@ -52,12 +52,7 @@ function addSong( _song ) {
             }
         });
 
-        if( !_song.approved ) {
-            $(el).addClass("pending");
-            $(".play", el).hide();
-        }
-
-        if( _song.sourceurl && _song.approved ) {
+        if( _song.sourceurl ) {
             $(el).data("url", _song.sourceurl );
 
             $(".play", el).click(function() {
@@ -81,10 +76,13 @@ function addSong( _song ) {
                 $(".audio-player")[0].pause();
                 $(".audio-player")[0].currentTime = 0;
             });
+        } else {
+            $(el).addClass("pending");
+            $(".play", el).hide();
         }
 
         $(".songs").append( el );
-    //}
+    }
 }
 
 function buildSongs() {
@@ -218,8 +216,6 @@ $(document).ready(function() {
     });
 
     $(".audio-player")[0].addEventListener('ended', function() {
-        console.log("ended");
-
         $(".audio-player")[0].pause();
         var _el = $(".song.playing")[0];
         $(".song.playing").removeClass("playing");
