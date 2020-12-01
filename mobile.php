@@ -32,7 +32,7 @@
         <link href='./css/mobile.css?v=003' media='all' rel='stylesheet' type='text/css' />
         
         <script src='./js/jquery-2.1.1.min.js' type='text/javascript'></script>
-        <script src='./js/mobile.js?v=003' type='text/javascript'></script>
+        <script src='./js/mobile.js?v=004' type='text/javascript'></script>
         <script>
             var base_url = "<?=$base_url?>";
         </script>
