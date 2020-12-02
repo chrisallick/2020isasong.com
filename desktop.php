@@ -48,11 +48,6 @@
         </script>
     </head>
     <body>
-        <!--
-            Your Mother Fuckin' Boy
-
-            Chr!$ @!!iC|< 8==> https://chris.computer
-        -->
         <div id="wrapper">
             <div class="title-wrapper">
                 <h1 class="title">2020 IS A SONG</h1>
