@@ -10,6 +10,31 @@ $(window).load(function() {
     });
 });
 
+function buildSiteSettings() {
+    $.ajax({
+        url: base_url + "/api/singletons/get/Subtitle",
+        type: 'GET',
+        cache: false,
+        success: function(data) {
+            console.log( data );
+            if( data && data.subtitle_copy ) {
+                $(".subtitle-wrapper .subtitle").text( data.subtitle_copy );
+            }
+
+            if( data && data.about_copy ) {
+                $(".about").text( data.about_copy );
+
+                $(".about").html("<textarea>" + data.about_copy + "</textarea>");
+            }
+
+            if( data && !data.add_a_song ) {
+                $("hr.add-song-hr").hide();
+                $(".addasong-wrapper").hide();
+            }
+        }
+    });
+}
+
 function buildFiledUnder() {
     $.ajax({
         url: base_url + "/api/collections/get/fileunder",
@@ -106,6 +131,7 @@ function test() {
 
 var playListMode = false;
 $(document).ready(function() {
+    buildSiteSettings();
     buildFiledUnder();
     buildSongs();
 

@@ -88,7 +88,7 @@
                 </div>
             </div>
 
-            <hr class="two" />
+            <hr class="two add-song-hr" />
 
             <div class="addasong-wrapper">
                 <div class="addasongbutton"><p><span>+</span> ADD YOUR SONG</p></div>
