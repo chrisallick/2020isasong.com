@@ -12,8 +12,9 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .subtitle-wrapper p { font: normal 1.2vw Courier; color: #00228f; float: left; }
 .subtitle-wrapper a { text-decoration: underline; font: normal 1.2vw Courier; color: #00228f; float: right; }
 
-.about { width: 86%; margin: 0 auto; padding: 3vw 0vw; }
-.about textarea { width: 100%; height: 11vw; outline: none; border: none; resize: none; font: normal 1.8vw Helvetica; color: #00228f; }
+.about { width: 86%; margin: 0 auto; padding: 3vw 0vw 1vw 0vw; }
+.about p { width: 100%; height: 6vw; font: normal 1.8vw Helvetica; color: #00228f; }
+.about p a { font: normal 1.8vw Helvetica; color: #00228f; }
 
 .search-wrapper { position: relative; width: 86%; height: 2.5vw; margin: 0 auto; padding: 4vw 0vw .6vw 0vw; }
 .search-wrapper .item { float: left; font: normal 1.1vw Courier; color: #00228f; height: 2vw; box-sizing: border-box; }

@@ -76,7 +76,7 @@
                         <option selected value="all">FILE UNDER</option>
                     </select>
                 </form>
-                <div class="play-all"></div>
+                <a target="_blank" href="https://open.spotify.com/playlist/3hqWzihgoprIsZ6Xt46NsN?si=WL19lO5iRUa3dD4__OflhQ" class="play-all"></a>
                 <div class="playing-anim">
                     <div class="bar one"></div>
                     <div class="bar two"></div>

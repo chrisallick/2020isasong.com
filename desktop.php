@@ -80,7 +80,9 @@
                         <option selected value="all">FILE UNDER</option>
                     </select>
                 </form>
-                <div class="play-all item"><div class="play-all-button"></div></div>
+                <div class="play-all item">
+                    <a target="_blank" href="https://open.spotify.com/playlist/3hqWzihgoprIsZ6Xt46NsN?si=WL19lO5iRUa3dD4__OflhQ" class="play-all-button"></a>
+                </div>
                 <div class="item playing-anim">
                     <div class="bar one"></div>
                     <div class="bar two"></div>
@@ -102,7 +104,7 @@
                             <option selected value="all">File under:</option>
                         </select>
                     </div>
-                    <textarea class="_description" placeholder="Add your associated memory or feeling..."></textarea>
+                    <div class="_description" placeholder="Add your associated memory or feeling..."></div>
                     <div class="submit"><p>SUBMIT</p></div>
                 </form>
                 <div class="thanks">
