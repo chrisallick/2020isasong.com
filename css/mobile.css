@@ -13,8 +13,9 @@ hr.two { width: 86%; margin: 0 auto; border-top: 1px solid #b7b7b7; }
 .subtitle-wrapper p:last-child { margin-bottom: 0px; }
 .subtitle-wrapper a { text-decoration: underline; font: normal 3.2vw Courier; color: #00228f; }
 
-.about { width: 86%; margin: 0 auto; padding: 5vw 0vw; }
-.about p { width: 100%; height: 11vw; font: normal 3.2vw Helvetica; color: #00228f; }
+.about { width: 86%; margin: 0 auto; padding: 5vw 0vw 6vw 0vw; }
+.about p { width: 100%; font: normal 3.2vw Helvetica; color: #00228f; margin-bottom: 4vw; }
+.about p:last-child { margin-bottom: 0px; }
 .about p a { font: normal 3.2vw Helvetica; color: #00228f; }
 
 .search-wrapper { position: relative; width: 86%; margin: 0 auto; padding: 6vw 0vw; }
